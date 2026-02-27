@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Customer Churn Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1>Smart Customer Churn Admin Dashboard</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Total Customers</h2>
+            <p id="totalCustomers">0</p>
+        </div>
+
+        <div class="card danger">
+            <h2>Likely To Unsubscribe</h2>
+            <p id="highRiskCustomers">0</p>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="churnPieChart"></canvas>
+    </div>
+
+    <h2>Top 20 High Risk Customers</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Age</th>
+                <th>Geography</th>
+                <th>Balance</th>
+                <th>Probability</th>
+            </tr>
+        </thead>
+        <tbody id="highRiskTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
